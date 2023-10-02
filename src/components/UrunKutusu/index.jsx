@@ -4,7 +4,7 @@ import PlusCircle from "../PlusCircle"
 import Star from "../Star"
 import Price from "./Price"
 import { useDispatch, useSelector } from "react-redux"
-import { addFavorite } from "../../Store/favoritesStore"
+import { favoriteAdd, favoriteRemove } from "../../Store/favoritesStore"
 
 
 
@@ -12,14 +12,19 @@ const UrunKutusu = ({ product }) => {
 
     const { id } = product
 
-    const {favoriteList} = useSelector(state => state.favorites)
-
     const dispatch = useDispatch()
+    const { favoriteList } = useSelector((state) => state.favoriteStore);
 
-    const toggleFavorite = () => {
-        dispatch(addFavorite(product))
-    }
 
+
+    const favoriteToggle = () => {
+        const isFavorite = favoriteList.some(ss => ss.id === product.id);
+        if (isFavorite) {
+            dispatch(favoriteRemove(product.id));
+        } else {
+            dispatch(favoriteAdd(product));
+        }
+    };
     return (
         <div className="bg-stone-100 border p-1 flex flex-col justify-between text-brown-normal">
             <div className="aspect-w-1">
@@ -33,14 +38,9 @@ const UrunKutusu = ({ product }) => {
                         <Star product={product} />
                     </div>
 
-                    {
-                        favoriteList !== undefined && (
-                            <button onClick={toggleFavorite} >
-                                <BookmarkHeart open={favoriteList.find(item => item.id === id)} size={22} color="rgb(186 157 96)" />  {/* open propu geçilirse icon değişir  */}
-                            </button>
-                        )
-                    }
-
+                    <button onClick={favoriteToggle} >
+                        <BookmarkHeart open={favoriteList.find(item => item.id === id)} size={22} color="rgb(186 157 96)" />  {/* open propu geçilirse icon değişir  */}
+                    </button>
 
                 </div>
                 <img className="object-cover w-full h-[200px]" src={product.images} alt={product.name} />

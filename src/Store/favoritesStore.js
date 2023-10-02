@@ -1,32 +1,32 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-
 const initialState = {
-    favoriteList: window.localStorage.getItem('favorites') ? JSON.parse(window.localStorage.getItem('favorites')) : null,
+  favoriteList: localStorage.getItem('favoriteList') ? JSON.parse(localStorage.getItem('favoriteList')) : [],
 }
 
+export const favoriteStore = createSlice({
+  name: 'favorite',
+  initialState,
+  reducers: {
+    favoriteAdd: (state, action) => {
+      const existingProduct = state.favoriteList.find(product => product.id === action.payload.id);
+      if (!existingProduct) {
+        state.favoriteList.push(action.payload);
+        localStorage.setItem('favoriteList', JSON.stringify(state.favoriteList));
+      } else {
+        const idToRemove = action.payload;
+        state.favoriteList = state.favoriteList.filter(item => item.id !== idToRemove);
+        localStorage.setItem('favoriteList', JSON.stringify(state.favoriteList))
+      }
+    },
 
-export const favoritesStore = createSlice({
-    name: 'favorites',
-    initialState,
-    reducers: {
-        addFavorite: async (state, action) => {
-
-            let product = action.payload
-
-            const exist = state.favoriteList.find(item => item.id === product.id)
-
-            if (exist) {
-                state.favoriteList = state.favoriteList.filter(item => item.id !== product.id)
-            }else{
-                state.favoriteList = [...state.favoriteList, product]
-            }
-
-            window.localStorage.setItem('favorites', JSON.stringify(state.favoriteList));
-        }
-    }
+    favoriteRemove: (state, action) => {
+      const idToRemove = action.payload;
+      state.favoriteList = state.favoriteList.filter(item => item.id !== idToRemove);
+      localStorage.setItem('favoriteList', JSON.stringify(state.favoriteList))
+    },
+  },
 });
 
-
-export const { addFavorite } = favoritesStore.actions;
-export default favoritesStore.reducer;
+export const { favoriteAdd, favoriteRemove } = favoriteStore.actions;
+export default favoriteStore.reducer;

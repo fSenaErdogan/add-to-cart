@@ -1,11 +1,10 @@
 
-
 import { configureStore } from '@reduxjs/toolkit'
+import favoriteStore from './favoritesStore';
 
-import favoritesStore from './favoritesStore';
 export const store = configureStore({
     reducer: {
-        favorites: favoritesStore,
+        favoriteStore: favoriteStore,
     },
     middleware: getDefaultMiddleware =>
         getDefaultMiddleware({
