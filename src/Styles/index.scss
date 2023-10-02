@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  background-color: cadetblue;
+} */
+
+.underline-menu {
+  position: relative;
+
+  &::after {
+    content: "";
+    /*content olmadan istediğimizi yapamayız "underline-menu" elemanımızın afterına bir boş içerik oluşturur*/
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transition: all 300ms ease-out;
+    @apply bg-transparent;
+  }
+
+  &:hover::after {
+    @apply bg-brown-dark;
+  }
+}

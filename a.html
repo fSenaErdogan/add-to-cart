@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative & Absolute</title>
+</head>
+<body>
+
+    <div class="div1">
+        div1
+
+        <div class="altdiv1">
+            alt div 1
+        </div>
+
+    </div>
+
+
+    <div class="div2">
+        div2
+    </div>
+
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        .div1{
+            background-color: rgb(209, 122, 122);
+            padding: 15px;
+            margin-top: 150px;
+            margin-bottom: 15px;
+            position: relative;    /* absolute olan elemanın bu elemanın içinde pozisyonlanması beklenir */
+        }
+        .altdiv1{
+            background-color: rgb(136, 217, 136);
+            position: absolute;    /* relative olan üst elemanın içinde pozisyonlanır */
+            top:0;
+            right: 0;
+        }
+        .div2{
+            background-color: rgb(136, 136, 212);
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+
+    </style>
+</body>
+</html>
