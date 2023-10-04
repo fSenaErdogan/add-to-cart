@@ -1,6 +1,6 @@
 
-const Price = ({children}) => {
-    return(
+const Price = ({ children }) => {
+    return (
         <div className="text-xs text-end">
             {children}
         </div>
