@@ -96,10 +96,10 @@ const Solsidebar = () => {
     return (
         <>
             {/* SOL SİDEBAR */}
-            <div className='w-1/5 p-2 pt-3 transition-all delay-200'>
+            <div className='w-1/5 p-2 pt- transition-all delay-200'>
                 {
                     categories.length > 0 && categories.map((categorie, index) => (
-                        <div key={index} className="pl-1 mb-4">
+                        <div key={index} className=" mb-2 p-2 pb-4">
                             <Hbside link={categorie.link}>{categorie.title}</Hbside>
                             {categorie?.sub?.length > 0 && categorie.sub.map((subCategorie, subIndex) => (
                                 <div key={subIndex} className="pl-2">
