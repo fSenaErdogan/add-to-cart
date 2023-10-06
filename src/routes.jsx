@@ -3,9 +3,9 @@ import {
 } from "react-router-dom";
 
 import App from './Pages/App.jsx'
-import Heyy from './Pages/Heyy.jsx';
 import Layout from "./Layout/index.jsx";
 import NotFound from "./Pages/NotFound.jsx";
+import ProductDetail from "./Pages/ProductDetail.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
         element: <App />,
       },
       {
-        path: "a",
-        element: <Heyy />
+        path: "/product_detail/:name",
+        element: <ProductDetail />
       },
       {
         path: "*",

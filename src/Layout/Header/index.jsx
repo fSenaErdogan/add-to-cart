@@ -21,7 +21,7 @@ const Header = () => {
                 
                 <div className='mx-auto py-1'> 
                     <Link to="/">
-                        <img className="h-[54px]" src="odrena_logo.png" alt="logo" />
+                        <img className="h-[54px]" src="/odrena_logo.png" alt="logo" />
                     </Link>
                 </div>
 

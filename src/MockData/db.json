@@ -1,0 +1,207 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Kazak",
+            "price": "250 TL",
+            "size": [
+                "xxl",
+                "xl",
+                "l",
+                "m",
+                "s"
+            ],
+            "color": [
+                "Siyah",
+                "Mavi",
+                "Kırmızı",
+                "Yeşil"
+            ],
+            "images": "http://localhost:5173/kazak.jpg",
+            "star": "4"
+        },
+        {
+            "id": 2,
+            "name": "Pantolon",
+            "price": "120 TL",
+            "size": [
+                "xl",
+                "l",
+                "m"
+            ],
+            "color": [
+                "Siyah",
+                "Beyaz",
+                "Pembe",
+                "Mavi"
+            ],
+            "images": "http://localhost:5173/pantolon.jpg",
+            "star": "3"
+        },
+        {
+            "id": 3,
+            "name": "Bot",
+            "price": "130 TL",
+            "size": [
+                "44",
+                "42",
+                "40"
+            ],
+            "color": [
+                "Kahverengi",
+                "Beyaz",
+                "Pembe",
+                "Mor"
+            ],
+            "images": "http://localhost:5173/bot.jpg",
+            "star": "4"
+        },
+        {
+            "id": 4,
+            "name": "Elbise",
+            "price": "170 TL",
+            "size": [
+                "44",
+                "42",
+                "40"
+            ],
+            "color": [
+                "Kahverengi",
+                "Beyaz",
+                "Pembe",
+                "Mor"
+            ],
+            "images": "http://localhost:5173/elbise.jpg",
+            "star": "1"
+        },
+        {
+            "id": 5,
+            "name": "Bere",
+            "price": "50 TL",
+            "size": [
+                "büyük",
+                "Orta",
+                "Küçük"
+            ],
+            "color": [
+                "Siyah",
+                "Mavi",
+                "Kırmızı",
+                "Yeşil"
+            ],
+            "images": "http://localhost:5173/bere.jpg",
+            "star": "2"
+        },
+        {
+            "id": 6,
+            "name": "Blazer Ceket",
+            "price": "250 TL",
+            "size": [
+                "xl",
+                "l",
+                "m",
+                "s"
+            ],
+            "color": [
+                "Siyah",
+                "Mavi",
+                "Kırmızı",
+                "Yeşil"
+            ],
+            "images": "http://localhost:5173/blazer.jpg",
+            "star": "4"
+        },
+        {
+            "id": 7,
+            "name": "Pijama",
+            "price": "180 TL",
+            "size": [
+                "xxl",
+                "xl"
+            ],
+            "color": [
+                "Beyaz",
+                "Pembe",
+                "Mor",
+                "Siyah"
+            ],
+            "images": "http://localhost:5173/pijama.jpg",
+            "star": "3"
+        },
+        {
+            "id": 8,
+            "name": "Sweatshirt",
+            "price": "150 TL",
+            "size": [
+                "xxl",
+                "xl",
+                "s"
+            ],
+            "color": [
+                "Siyah",
+                "Bordo",
+                "Gri",
+                "Yeşil"
+            ],
+            "images": "http://localhost:5173/sweatshirt.jpg",
+            "star": "2"
+        },
+        {
+            "id": 9,
+            "name": "Tulum",
+            "price": "300 TL",
+            "size": [
+                "xxl",
+                "l",
+                "m",
+                "s"
+            ],
+            "color": [
+                "Siyah",
+                "Beyaz",
+                "Mavi",
+                "Kahverengi"
+            ],
+            "images": "http://localhost:5173/tulum.jpg",
+            "star": "3"
+        },
+        {
+            "id": 10,
+            "name": "Spor Ayakkabı",
+            "price": "350 TL",
+            "size": [
+                "38",
+                "39",
+                "40"
+            ],
+            "color": [
+                "Beyaz",
+                "Siyah",
+                "Mavi",
+                "Gri"
+            ],
+            "images": "http://localhost:5173/ayakkabi.jpg",
+            "star": "1"
+        },
+        {
+            "id": 11,
+            "name": "Hırka",
+            "price": "200 TL",
+            "size": [
+                "xxl",
+                "xl",
+                "l",
+                "m",
+                "s"
+            ],
+            "color": [
+                "Gri",
+                "Beyaz",
+                "Siyah",
+                "Mavi"
+            ],
+            "images": "http://localhost:5173/hirka.jpg",
+            "star": "5"
+        }
+    ]
+}
