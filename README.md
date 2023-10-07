@@ -1,10 +1,10 @@
-## Add-To-Cart with React + Vite
+# Add-To-Cart with React + Vite
 
-# Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 - React
 - Tailwind CSS
 
-# Katkıda Bulunma
+## Katkıda Bulunma
 Eğer bu projeye katkıda bulunmak isterseniz, aşağıdaki adımları takip edebilirsiniz:
 
 - Bu depoyu fork edin.
@@ -12,7 +12,7 @@ Eğer bu projeye katkıda bulunmak isterseniz, aşağıdaki adımları takip ede
 - Yaptığınız değişiklikleri bu dalda yapın.
 - Değişikliklerinizi commit edin ve bir pull request oluşturun.
 
-# Proje Renkleri
+## Proje Renkleri
 
 - site arkaplanı 
 bg-stone-50
