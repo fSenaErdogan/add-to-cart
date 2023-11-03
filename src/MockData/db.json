@@ -203,5 +203,27 @@
             "images": "http://localhost:5173/hirka.jpg",
             "star": "5"
         }
+    ],
+    "tabs":[
+        {
+            "id": 1,
+            "name": "Sizin İçin"
+        },
+        {
+            "id": 2,
+            "name": "İndirimdekiler"
+        },
+        {
+            "id": 3,
+            "name": "5 Yıldızlılar"
+        },
+        {
+            "id": 4,
+            "name": "Ücretsiz Kargo"
+        },
+        {
+            "id": 5,
+            "name": "Yeni Eklenenler"
+        }
     ]
 }
